@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caps Bazaar</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f5f5;color:#222}
+header{background:#111;color:white;padding:18px;text-align:center}
+header h1{margin:0;font-size:28px}
+nav{background:white;padding:12px;text-align:center}
+nav a{margin:0 10px;text-decoration:none;color:#222}
+.hero{background:#ffcc00;padding:35px 20px;text-align:center}
+.hero h2{font-size:30px;margin:5px}
+.hero p{font-size:18px}
+.products{padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px}
+.card{background:white;border-radius:12px;padding:15px;text-align:center;box-shadow:0 2px 8px #ccc}
+.cap{height:140px;background:#ddd;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:55px}
+.price{font-size:20px;font-weight:bold;margin:10px}
+button{background:#111;color:white;border:0;padding:12px 20px;border-radius:8px;font-size:16px}
+footer{background:#111;color:white;text-align:center;padding:20px;margin-top:20px}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🧢 Caps Bazaar</h1>
+<p>आपकी पसंद की शानदार कैप</p>
+</header>
+
+<nav>
+<a href="#">होम</a>
+<a href="#products">कैप्स</a>
+<a href="#contact">संपर्क</a>
+</nav>
+
+<section class="hero">
+<h2>नई कैप्स अब ऑनलाइन खरीदें</h2>
+<p>अच्छी क्वालिटी • शानदार डिजाइन • आसान ऑर्डर</p>
+</section>
+
+<section class="products" id="products">
+
+<div class="card">
+<div class="cap">🧢</div>
+<h3>Classic Black Cap</h3>
+<div class="price">₹299</div>
+<button onclick="order('Classic Black Cap')">ऑर्डर करें</button>
+</div>
+
+<div class="card">
+<div class="cap">🧢</div>
+<h3>Premium Cap</h3>
+<div class="price">₹399</div>
+<button onclick="order('Premium Cap')">ऑर्डर करें</button>
+</div>
+
+<div class="card">
+<div class="cap">🧢</div>
+<h3>Sports Cap</h3>
+<div class="price">₹349</div>
+<button onclick="order('Sports Cap')">ऑर्डर करें</button>
+</div>
+
+</section>
+
+<footer id="contact">
+<p>© 2026 Caps Bazaar</p>
+<p>ऑर्डर के लिए WhatsApp पर संपर्क करें</p>
+</footer>
+
+<script>
+function order(product){
+alert("आपने " + product + " चुना है। जल्द ही ऑर्डर सिस्टम जोड़ा जाएगा।");
+}
+</script>
+
+</body>
+</html>
